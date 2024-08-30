@@ -1,2 +1,0 @@
-# vademicrum.com
-vademicrum.com
