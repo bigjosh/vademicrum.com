@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Vade Micrum</title>
+    <title>Vade Micrum - Order</title>
     <link rel="canonical" href="https://vademicrum.com">
 
     <!-- Bootstrap core CSS -->
@@ -27,9 +27,10 @@
         }
       }
 
-      /* Add bullets to UL */
+      <-- Add bullets to UL -->
       ul {
-        list-style-type: square;
+          list-style-type: disc !important;
+          padding-left: 1em;
       }
       
     </style>
@@ -37,6 +38,11 @@
     
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
+	
+	<!-- Stripe stuffs -->
+	<script src="https://js.stripe.com/v3/"></script>
+    <script src="checkout.js" defer></script>
+	
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
     
@@ -45,20 +51,20 @@
     <div>
       <h3 class="float-md-start mb-0">Vade Micrum</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="order.html">Order</a>
+        <a class="nav-link" aria-current="page" href="/">Home</a>
+        <a class="nav-link active" href="order.html">Order</a>
         <a class="nav-link" href="https://josh.com/contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="px-3">
-    <h1>Extreme portability and permanence for your most precious data.</h1>
+    <h1>Place Order</h1>
 
     <BR>
 
     <div class="container">
-      <div class="row justify-content-center"  width="50%">
+      <div class="row justify-content-center">
         <div class="col-auto">
           <ul class="list-unstyled text-start">
             <li class="lead">up to one million characters of your information</li>
@@ -75,7 +81,7 @@
     <br>
 
     <div class="container">
-        <div class="row justify-content-center"  width="50%">
+        <div class="row justify-content-center">
           <div class="col-auto">
             <ul class="list-unstyled text-start">
               <li class="lead">impervious to heat, acids, and EMP</li>
